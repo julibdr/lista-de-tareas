@@ -1,5 +1,5 @@
 {
-  "name": "angular-todos",
+  "name": "lista-de-tareas",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

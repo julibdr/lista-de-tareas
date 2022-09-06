@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-todos": {
+    "lista-de-tareas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-todos",
+            "outputPath": "dist/lista-de-tareas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-todos:build"
+            "browserTarget": "lista-de-tareas:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-todos:build:production"
+              "browserTarget": "lista-de-tareas:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-todos:build"
+            "browserTarget": "lista-de-tareas:build"
           }
         },
         "test": {
@@ -110,18 +110,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-todos:serve"
+            "devServerTarget": "lista-de-tareas:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-todos:serve:production"
+              "devServerTarget": "lista-de-tareas:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-todos",
+  "defaultProject": "lista-de-tareas",
   "cli": {
     "analytics": false
   }
