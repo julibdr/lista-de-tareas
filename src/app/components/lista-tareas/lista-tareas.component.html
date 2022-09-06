@@ -1,0 +1,13 @@
+<div class="row" [ngClass]="setClasses()">
+  <div class="title">
+    <input
+      type="checkbox"
+      (change)="onToggle(tarea)"
+      [checked]="tarea.completed"
+    />
+    {{ tarea.title }}
+  </div>
+  <div class="actions">
+    <button (click)="onDelete(tarea)">Eliminar</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div id="main-container">
+  <div>
+   <button class="boton" (click)="agregarTarea()">{{agregar ? 'Cerrar' : 'Agregar tarea'}}
+    </button>
+    
+  </div>
+
+  <app-add-tarea *ngIf="agregar"></app-add-tarea>
+  <app-lista-tareas
+    *ngFor="let tarea of tareas"
+    [tarea]="tarea"
+    (borrarTarea)="borrarTarea($event)"
+    (completarTarea)="completarTarea($event)"
+  >
+  </app-lista-tareas>
+</div>
