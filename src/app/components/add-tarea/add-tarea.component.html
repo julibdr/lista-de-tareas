@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+    <h2>Registrar una nueva tarea</h2>
+    <div>
+        <label for="">Id</label>    
+        <input type="text" name="id" id="" [(ngModel)]="id">  
+    </div>
+    <div>
+        <label for="">Tarea</label>    
+        <input type="text" name="title" id="" [(ngModel)]="title">  
+    </div>
+    <input class="boton" type="submit" value="Crear">
+</form>
+
+
