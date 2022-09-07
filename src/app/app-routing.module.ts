@@ -4,7 +4,7 @@ import {TareasComponent} from './components/tareas/tareas.component';
 
 const routes: Routes = [
   {
-    path: '/',
+    path: '',
     component: TareasComponent
   },
 ];
